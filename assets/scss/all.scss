@@ -51,7 +51,42 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*
+PS：CSS 樣式：先看權重再看先後（跨檔案的css 也是一樣）
+HTML標籤選擇棄：1分 h1{ } a{ } p{ } div{ } span{ }
+類別選擇器：10分 .header{ } .title{ }
+ID 選擇器：100分 #word(在html 為id="word")
+style 樣式選擇器：1000分 在html 標籤內寫style 樣式，如：<h1 style="color: pink";font-size: 60px;>
+PS：style 樣式通常拿來做動畫用，如jQuery
+!important：10000分 例：a{ color: red !important; }
+*/
+/*
+1.響應式網頁一定要加的img reset
+img{
+	max-width: 100%;
+	height: auto;
+}
+2.
+*/
 
-h1{
-	color: red;
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	/*
+	用以保持既有圖片的寬度
+	*/
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.news{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.news li{
+	width: 30%;
+	margin-bottom: 24px;
 }

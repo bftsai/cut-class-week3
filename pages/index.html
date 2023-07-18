@@ -5,44 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-    <div class="container">
-      <ul class="news">
-        <li>
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/vito.png" alt="">
-          <h1>大標題</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur exercitationem facilis rem omnis quaerat molestias! Amet, consectetur tenetur! Dolor, recusandae?
-          </p>
-        </li>
-        <li>
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/vito.png" alt="">
-          <h1>大標題</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quisquam. Deleniti eos quisquam pariatur tempora sunt neque, illum at molestiae?
-          </p>
-        </li>
-        <li>
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/vito.png" alt="">
-          <h1>大標題</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aut laborum nemo corporis. Illum doloremque dolor et assumenda totam consectetur.
-          </p>
-        </li>
-        <li>
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/vito.png" alt="">
-          <h1>大標題</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A molestias, eveniet laboriosam amet sint natus nulla quidem optio porro omnis?
-          </p>
-        </li>
-      </ul>
+    <div class="wrap">
+      <%- include('./layout/header'); -%>
+      <div class="content">
+        <div class="banner">
+          <div class="container">
+            <p class="p1">
+              Promise-Desert 2020 早春系列
+            </p>
+            <h1>
+              看得清，才能看得遠
+            </h1>
+            <a target="_blank" href="#" class="p3">
+              立即購買
+            </a>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
     </div>
-    
-
-    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

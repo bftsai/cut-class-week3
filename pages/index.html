@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/all.js"></script>
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +18,460 @@
   <body>
     <div class="wrap">
       <%- include('./layout/header'); -%>
-      <div class="content">
-        <div class="banner">
-          <div class="container">
-            <p class="p1">
+      <div class="index-content">
+        <div class="banner py-296">
+          <div class="container d-flex fdcol">
+            <p class="p1 text-align-r">
               Promise-Desert 2020 早春系列
             </p>
-            <h1>
+            <h1 class="mb-4 text-align-r">
               看得清，才能看得遠
             </h1>
             <a target="_blank" href="#" class="p3">
               立即購買
             </a>
           </div>
+        </div>
+        <div class="introduce py-80">
+          <div class="container">
+            <h2 class="text-align-c mb-32">
+              用專業的心，做專業的事
+            </h2>
+            <ul class="introduceItem d-flex jcsb">
+              <li class="d-flex fdcol aic">
+                <img class="mb-24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true" alt="introduce pic">
+                <p class="p2 mb-8">單一價格</p>
+                <p class="p4">
+                  無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
+                </p>
+              </li>
+              <li class="d-flex fdcol aic">
+                <img class="mb-24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true" alt="introduce pic">
+                <p class="p2 mb-8">20 分鐘即可取件</p>
+                <p class="p4">
+                  為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。
+                </p>
+              </li>
+              <li class="d-flex fdcol aic">
+                <img class="mb-24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true" alt="introduce pic">
+                <p class="p2 mb-8">安心售後服務</p>
+                <p class="p4">
+                  我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+                </p>
+              </li>
+              <li class="d-flex fdcol aic">
+                <img class="mb-24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true" alt="introduce pic">
+                <p class="p2 mb-8">
+                  關於鏡片
+                </p>
+                <p class="p4">
+                  使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-1 py-80">
+          <div class="container">
+            <h2 class="text-align-c mb-48">經典系列鏡框</h2>
+            <ul class="classic d-flex jcsb">
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="product classic pic"></a>
+                <a href="#" target="_blank">
+                  <h2 class="text-align-c pt-8">OPTICAL</h2>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="product classic pic"></a>
+                <a href="#" target="_blank">
+                  <h2 class="text-align-c pt-8">SUNGLASSES</h2>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="product classic pic"></a>
+                <a href="#" target="_blank">
+                  <h2 class="text-align-c pt-8">FUNCTIONAL</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-2 py-80">
+          <div class="container">
+            <h3 class="text-align-c mb-48">聯名設計鏡框</h3>
+            <ul class="jointName d-flex">
+              <li class="item1">
+                <a class="jointNamePic object1" href="#" target="_blank">
+                  DOUBLE A+
+                </a>
+                <a href="#" target="_blank">
+                  <h2 class="text-align-c py-8">DOUBLE A+</h2>
+                </a>
+              </li>
+              <li class="item2">
+                <a class="jointNamePic object2" href="#" target="_blank">
+                  YOUTH
+                </a>
+                <a href="#" target="_blank">
+                  <h2 class="text-align-c py-8">YOUTH</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="customer py-80">
+          <div class="container">
+            <h2 class="text-align-c mb-48">顧客推薦</h2>
+            <ul class="customerItem d-flex jcsb">
+              <li class="item1">
+                <a class="customerItem-bg1" href="#" target="_blank">
+                  Jessy
+                </a>
+                <a class="customerItemContent p-16" href="#" target="_blank">
+                  <p class="p4 mb-8">Jessy</p>
+                  <p class="p4 mb-72">
+                    眼鏡品質優良，下次還會想來這邊購買！
+                  </p>
+                  <p class="p5">2021/06/20</p>
+                </a>
+              </li>
+              <li class="item1">
+                <a class="customerItem-bg2" href="#" target="_blank">
+                  凱倫
+                </a>
+                <a class="customerItemContent p-16" href="#" target="_blank">
+                  <p class="p4 mb-8">凱倫</p>
+                  <p class="p4 mb-72">
+                    做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                  </p>
+                  <p class="p5">2021/04/18</p>
+                </a>
+              </li>
+              <li class="item2">
+                <a class="customerItem-bg3" href="#" target="_blank">
+                  悠悠
+                  </a>
+                  <a class="customerItemContent p-16" href="#" target="_blank">
+                  <p class="p4 mb-8">悠悠</p>
+                  <p class="p4 mb-72">
+                    謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                  </p>
+                  <p class="p5">2020/12/25</p>
+                </a>
+              </li>
+              <li class="item2">
+                <a class="customerItem-bg4" href="#" target="_blank">
+                  Kyuan
+                  </a>
+                  <a class="customerItemContent p-16" href="#" target="_blank">
+                  <p class="p4 mb-8">Kyuan</p>
+                  <p class="p4 mb-72">
+                    服務很好，品質沒有任何問題，非常喜歡。
+                  </p>
+                  <p class="p5">2020/10/31</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact py-80">
+          <div class="container d-flex fdcol aic">
+            <h2 class="mb-48">聯絡我們</h2>
+            <p class="p3 mb-24">
+              我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+            </p>
+            <form action="index.html" class="d-flex fdcol mt-24">
+              <label for="name" class="mb-8">
+                姓名
+              </label>
+              <input type="text" id="name" placeholder="陳小明" class="name p4 py-6 pl-12 mb-16" name="name">
+              <label class="mb-8" for="phone">
+                聯絡電話
+              </label>
+              <input class="phone p4 py-6 pl-12 mb-16" type="text" id="phone" placeholder="0912-345-678" name="phone">
+              <label class="mb-8" for="mail">
+                電子郵件
+              </label>
+              <input class="email p4 py-6 pl-12 mb-16" type="text" id="mail" placeholder="example@email.com" name="e-mail">
+              <label class="mb-8" for="textarea">
+                意見反應
+              </label>
+              <textarea class="textarea p4 pt-6 pb-106 pl-12 mb-16" placeholder="請輸入您的寶貴意見" name="sugest" id="textarea"></textarea>
+              <div class="checkbox d-flex aic mb-48">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">
+                  我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                </label>
+              </div>
+              <input class="submit p4 py-16 as-center" type="submit" value="確認送出">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="allProduct-content">
+        <div class="container">
+          <ul class="productType d-flex">
+            <li>
+              <a class="fs-32 py-24 text-align-c" href="#" target="_blank">
+                OPTICAL
+              </a>
+            </li>
+            <li>
+              <a class="fs-32 py-24 text-align-c" href="#" target="_blank">
+                SUNGLASSES
+              </a>
+            </li>
+            <li>
+              <a class="fs-32 py-24 text-align-c" href="#" target="_blank">
+                FUNCTIONAL
+              </a>            
+            </li>
+          </ul>
+        </div>
+        <ul class="banner-p d-flex">
+          <li class="banner-p-li item1">
+            <img src="https://i.imgur.com/pMVBww0.png" alt="banner pic">
+          </li>
+          <li class="banner-p-li item2">
+            <img src="https://i.imgur.com/ticUg90.png" alt="banner pic">
+          </li>
+        </ul>
+        <div class="container productlist py-80">
+          <h2 class="fs-42 text-align-c">Celluloid Combi</h2>
+          <p class="fs-32 text-align-c mb-32">賽璐珞鈦金屬混合鏡框</p>
+          <ul class="list d-flex jcsb">
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a class="test" target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-2.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-3.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-4.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-5.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-6.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-11.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="listItem">
+              <ul class="listItemObject">
+                <li>
+                  <a target="_blank" href="#">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-12.png?raw=true" alt="glass pic">
+                  </a>
+                  <div class="title d-flex jcsb">
+                    <p class="fs-24">BJ41600S</p>
+                    <p class="fs-24">NTD3,490</p>
+                  </div>
+                  <button class="fs-24">
+
+                  </button>
+                  <button class="fs-24">
+
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <%- include('./layout/footer'); -%>

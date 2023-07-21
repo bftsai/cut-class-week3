@@ -2,6 +2,7 @@
 @import './layout/footer.scss';
 
 
+
 @import './pages/index.scss';
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -89,19 +90,133 @@ body{
 	max-width: 1296px;
 	margin: 0 auto;
 }
+@media (max-width: 768px) {
+	.container{
+		padding: 0 36px;
+	}
+}
+@media (max-width: 375px) {
+	.container{
+		padding: 0 14px 0 13px;
+	}
+}
 .d-flex{
 	display: flex;
+}
+.fdcol{
+	flex-direction: column;
 }
 .jcsb{
 	justify-content: space-between;
 }
-.align-items-center{
+.jcc{
+	justify-content: center;
+}
+.aic{
 	align-items: center;
+}
+.as-end{
+	align-self: flex-end;
+}
+.as-center{
+	align-self: center;
+}
+.text-align-r{
+	text-align: right;
+}
+.text-align-c{
+	text-align: center;
+}
+.py-296{
+	padding: 296px 0;
+}
+.py-80{
+	padding: 80px 0;
+}
+.py-32{
+	padding: 32px 0;
+}
+.py-24{
+	padding: 24px 0;
+}
+.py-16{
+	padding: 16px 0;
+}
+.py-12{
+	padding: 12px 0;
+}
+.py-8{
+	padding: 8px 0;
+}
+.py-6{
+	padding: 6px 0;
+}
+.px-176{
+	padding: 0 176px;
+}
+.p-16{
+	padding: 16px;
+}
+.pt-48{
+	padding-top: 48px;
+}
+.pt-16{
+	padding-top: 16px;
+}
+.pt-8{
+	padding-top: 8px;
+}
+.pt-6{
+	padding-top: 6px;
+}
+.pb-106{
+	padding-bottom: 106px;
+}
+.pb-15{
+	padding-bottom: 15px;
+}
+.pl-12{
+	padding-left: 12px;
+}
+.mb-48{
+	margin-bottom: 48px;
+}
+.mb-32{
+	margin-bottom: 32px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-16{
+	margin-bottom: 16px;
+}
+.mb-72{
+	margin-bottom: 72px;
+}
+.mb-64{
+	margin-bottom: 64px;
+}
+.mb-8{
+	margin-bottom: 8px;
+}
+.mb-4{
+	margin-bottom: 4px;
+}
+.mx-32{
+	margin: 0 32px;
+}
+.mr-22{
+	margin-right: 22px;
+}
+.mr-20{
+	margin-right: 20px;
+}
+h1,h2,h3{
+	font-weight: bold;
 }
 h1{
 	font-size: 64px;
 	color: #650300;
-	font-weight: bold;
 }
 h2{
 	font-size: 48px;
@@ -126,83 +241,23 @@ h3{
 .p5{
 	font-size: 14px;
 }
-
-// header
-.header{
-	background-color: #AA0601;
-	padding: 16px 0 15px;
+.fs-42{
+	font-size: 42px;
 }
-.header .container{
-	align-items: center;
+.fs-32{
+	font-size: 32px;
 }
-.headerMenu{
-	width: 492px;
+.fs-24{
+	font-size: 24px;
 }
-.headerMenu a{
+.fs-18{
+	font-size: 18px;
+}
+body a{
 	text-decoration: none;
-	color: #FFFFFF;
-}
-.headerMenu a:hover{
-	color: #650300;
-}
-// footer
-.footer{
-	background-color: #AA0601;
-	padding-top: 48px;
-}
-.footer a{
 	display: block;
-	color: #FFFFFF;
-	text-decoration: none;
 }
-.footer a:hover{
+body a:hover{
 	color: #650300;
-}
-.footerMenu{
-	width: 480px;
-}
-.footerContacticon{
-	width: 208px;
-}
-.footerContacticon a{
-	width: 48px;
-	height: 48px;
-	text-indent: 200%;
-	overflow: hidden;
-	white-space: nowrap;
-}
-.footer .fb{
-	background: url(https://i.imgur.com/mGQULfk.png) center center no-repeat;
-}
-.footer .ig{
-	background: url(https://i.imgur.com/c5zyRiP.png) center center no-repeat;
-	margin: 0 32px;
-}
-.footer .line{
-	background: url(https://i.imgur.com/F2aUd0h.png) center center no-repeat;
-}
-.tel{
-	margin-bottom: 8px;
-}
-.tel span{
-	margin-right: 22px;
-}
-.mail span{
-	margin-right: 20px;
-	padding-bottom: 32px;
-}
-.bottom{
-	padding: 32px 0;
-	border-top: 1px solid #fff;
-}
-.bottom .p4{
-	color: #FFFFFF;
-}
-.bottomItem{
-	width: 174px;
-}
-//content
-.banner{
-	background: url(https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:5b20cbc4-5c64-4b67-814e-633b078a8cd4;revision=2?component_id=ae2ffa00-34a3-4ded-bcc6-af906db7f24b&api_key=CometServer1&access_token=1689728084_urn%3Aaaid%3Asc%3AUS%3A5b20cbc4-5c64-4b67-814e-633b078a8cd4%3Bpublic_bd4b1dfda1641d0f81a7e5e6d031948b27256993) center center no-repeat;
-	background-size: cover;
+	filter: drop-shadow(0 0 16px #650300);
 }

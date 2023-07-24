@@ -89,6 +89,7 @@ body{
 .container{
 	max-width: 1296px;
 	margin: 0 auto;
+	padding: 0 12px;
 }
 @media (max-width: 768px) {
 	.container{
@@ -226,23 +227,26 @@ h3{
 	font-size: 48px;
 	color: #FFFFFF;
 }
-.p1{
-	font-size: 36px;
-}
-.p2{
-	font-size: 24px;
-}
-.p3{
-	font-size: 20px;
-}
-.p4{
-	font-size: 16px;
-}
-.p5{
-	font-size: 14px;
-}
+// .p1{
+// 	font-size: 36px;
+// }
+// .p2{
+// 	font-size: 24px;
+// }
+// .p3{
+// 	font-size: 20px;
+// }
+// .p4{
+// 	font-size: 16px;
+// }
+// .p5{
+// 	font-size: 14px;
+// }
 .fs-42{
 	font-size: 42px;
+}
+.fs-36{
+	font-size: 36px;
 }
 .fs-32{
 	font-size: 32px;
@@ -250,12 +254,22 @@ h3{
 .fs-24{
 	font-size: 24px;
 }
+.fs-20{
+	font-size: 20px;
+}
 .fs-18{
 	font-size: 18px;
+}
+.fs-16{
+	font-size: 16px;
+}
+.fs-14{
+	font-size: 14px;
 }
 body a{
 	text-decoration: none;
 	display: block;
+	word-wrap: break-word;
 }
 body a:hover{
 	color: #650300;

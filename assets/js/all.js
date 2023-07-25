@@ -1,6 +1,12 @@
+
+
+
 $(document).ready(function () {
-    // $('.header .test').click(function (e) { 
-    //     e.preventDefault();
-    //     $('.index-content').fadeToggle(1000);
-    // });
+    $(document).ready(function () {
+        // $('.allProduct').click(function (e) { 
+        //     e.preventDefault();
+        //     $('.index-content').fadeToggle(500);
+        //     $('.allProduct-content').delay(300).fadeToggle(500);
+        // });
+    });
 });

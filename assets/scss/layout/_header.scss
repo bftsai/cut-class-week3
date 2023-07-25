@@ -22,7 +22,8 @@
 		flex-direction: column;
 		padding: 0;
 	}
-	.header img{
+	.headerLogo{
+		align-self: flex-start;
 		padding-left: 15px;
 	}
 	.headerMenu{

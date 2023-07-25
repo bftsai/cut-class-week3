@@ -1,0 +1,165 @@
+//classic
+
+.allProduct-content .choiceMenu{
+	padding: 0;
+}
+.productType li{
+	width: 33.333333%;
+	border: 1px solid #DCDCDC;
+	border-width: 0 1px;
+}
+.productType a{
+	color: #000000;
+	font-weight: 500;
+}
+.productType a:hover{
+	filter: drop-shadow(0 0 0 #FFFFFF);
+	padding-bottom: 16px;
+	border-bottom: 8px solid #AA0601;
+}
+@media (max-width: 768px){
+	.productType a{
+		font-size: 24px;
+	}
+}
+@media (max-width: 375px) {
+	.productType a{
+		font-size: 16px;
+		padding: 12px 0;
+	}
+	.productType a:hover{
+		padding-bottom: 4px;
+	}
+}
+.banner-p{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.banner-p .item1{
+	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true) center center no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 296px;
+}
+.banner-p .item2{
+	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true) center center no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 296px;
+}
+@media (max-width: 768px){
+	.banner-p{
+		max-width: 768px;
+	}
+	.banner-p .item1{
+		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true) center center no-repeat;
+		background-size: cover;
+	}
+	.banner-p .item2{
+		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true) center center no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 375px){
+	.banner-p{
+		max-width: 375px;
+	}
+	.banner-p .item1,.banner-p .item2{
+		height: 136px;
+	}
+}
+.productlist h2{
+	font-weight: 500;
+	color: #000000;
+}
+.productlist .list{
+	flex-wrap: wrap;
+}
+.productlist .list .listItem{
+	width: 23.6112%;
+}
+.productlist .listItem a:hover{
+	filter: drop-shadow(0 0 0 #FFFFFF);
+	box-shadow: 0 0 4px 1px #000000;
+}
+.listItemObject .productPrice{
+	color: #AA0601;
+	font-weight: 500;
+}
+.productlist input{
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+}
+.productlist input:hover{
+	cursor: pointer;
+}
+.productlist .item1{
+	background-color: #5F3E2D;
+	border-color: #5F3E2D;
+	margin: 0 4px 0 0;
+}
+.productlist .item2{
+	background-color: #B75929;
+	border-color: #B75929;
+}
+@media (max-width: 768px) {
+	.productlist .list{
+		flex-wrap: wrap;
+	}
+	.productlist .list .listItem{
+		width: 48.275862%;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 375px){
+	.allProduct-content .productlist{
+		padding-top: 40px;
+	}
+	.productlist .mb-32{
+		margin-bottom: 24px;
+	}
+	.productlist .list .listItem{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+}
+.allProduct-content .pageBar li{
+	border-color: #555555;
+	border-style: solid;
+	border-width: 1px 1px 1px 0;
+}
+.allProduct-content .pageBar a{
+	color: #555555;
+}
+.allProduct-content .pageBar .back{
+	border-left: 1px solid #555555;
+}
+.allProduct-content .pageBar li a{
+	padding: 11px 16px;
+}
+.allProduct-content .back a,.allProduct-content .next a{
+	line-height: 26px;
+	padding: 11px 12px;
+}
+.allProduct-content .next a{
+	background-color: #F2F2F2;
+}
+.allProduct-content .pageBar a:hover{
+	filter: drop-shadow(0 0 0 #FFFFFF);
+	background-color: #000000;
+	color: #FFFFFF;
+}
+@media (max-width: 768px) {
+	.pageBar{
+		padding-top: 40px;
+	}
+}
+@media (max-width: 375px) {
+	.allProduct-content .pageBar{
+		padding-bottom: 64px;
+	}
+}
+
+//sunglasses
+

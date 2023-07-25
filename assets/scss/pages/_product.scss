@@ -1,6 +1,5 @@
 //classic
-
-.allProduct-content .choiceMenu{
+.choiceMenu{
 	padding: 0;
 }
 .productType li{
@@ -18,6 +17,9 @@
 	border-bottom: 8px solid #AA0601;
 }
 @media (max-width: 768px){
+    .wrap .container.choiceMenu{
+        padding: 0;
+    }
 	.productType a{
 		font-size: 24px;
 	}
@@ -33,119 +35,101 @@
 }
 .banner-p{
 	max-width: 1920px;
-	margin: 0 auto;
-}
-.banner-p .item1{
-	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true) center center no-repeat;
-	background-size: cover;
-	width: 50%;
-	height: 296px;
-}
-.banner-p .item2{
-	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true) center center no-repeat;
-	background-size: cover;
-	width: 50%;
-	height: 296px;
+    max-height: 296px;
+    margin: 0 auto;
 }
 @media (max-width: 768px){
 	.banner-p{
-		max-width: 768px;
+		max-width: 1138px;
+        max-height: 296px;
 	}
-	.banner-p .item1{
-		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true) center center no-repeat;
-		background-size: cover;
-	}
-	.banner-p .item2{
-		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true) center center no-repeat;
-		background-size: cover;
-	}
+    .classic .item1 img{
+        content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+    }
+    .classic .item2 img{
+        content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+    }
 }
-@media (max-width: 375px){
-	.banner-p{
-		max-width: 375px;
-	}
-	.banner-p .item1,.banner-p .item2{
-		height: 136px;
-	}
-}
-.productlist h2{
+.classProduct h2{
 	font-weight: 500;
 	color: #000000;
 }
-.productlist .list{
+.classProductList{
 	flex-wrap: wrap;
 }
-.productlist .list .listItem{
+.classProductList .list{
 	width: 23.6112%;
 }
-.productlist .listItem a:hover{
+.listItem a:hover{
 	filter: drop-shadow(0 0 0 #FFFFFF);
 	box-shadow: 0 0 4px 1px #000000;
 }
-.listItemObject .productPrice{
+.listItem .productPrice{
 	color: #AA0601;
 	font-weight: 500;
 }
-.productlist input{
+.listItem input{
 	width: 24px;
 	height: 24px;
 	border-radius: 4px;
 }
-.productlist input:hover{
+.listItem input:hover{
 	cursor: pointer;
 }
-.productlist .item1{
+.listItem .item1{
 	background-color: #5F3E2D;
 	border-color: #5F3E2D;
 	margin: 0 4px 0 0;
 }
-.productlist .item2{
+.listItem .item2{
 	background-color: #B75929;
 	border-color: #B75929;
 }
 @media (max-width: 768px) {
-	.productlist .list{
-		flex-wrap: wrap;
-	}
-	.productlist .list .listItem{
+	.classProductList .list{
 		width: 48.275862%;
-		margin-bottom: 40px;
 	}
+    .classProductList .list{
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 375px){
-	.allProduct-content .productlist{
+	.classic .classProduct{
 		padding-top: 40px;
 	}
-	.productlist .mb-32{
+    .classProduct h2{
+        font-size: 24px;
+    }
+	.classProduct .mb-32{
+        font-size: 24px;
 		margin-bottom: 24px;
 	}
-	.productlist .list .listItem{
+	.classProductList .list{
 		width: 100%;
 		margin-bottom: 24px;
 	}
 }
-.allProduct-content .pageBar li{
+.pageBar li{
 	border-color: #555555;
 	border-style: solid;
 	border-width: 1px 1px 1px 0;
 }
-.allProduct-content .pageBar a{
+.pageBar a{
 	color: #555555;
 }
-.allProduct-content .pageBar .back{
+.pageBar .back{
 	border-left: 1px solid #555555;
 }
-.allProduct-content .pageBar li a{
-	padding: 11px 16px;
+.pageBar a{
+	padding: 11px 15.5px;
 }
-.allProduct-content .back a,.allProduct-content .next a{
-	line-height: 26px;
-	padding: 11px 12px;
+.back a,.next a{
+	line-height: 27px;
 }
-.allProduct-content .next a{
+.next a{
 	background-color: #F2F2F2;
 }
-.allProduct-content .pageBar a:hover{
+.pageBar a:hover{
 	filter: drop-shadow(0 0 0 #FFFFFF);
 	background-color: #000000;
 	color: #FFFFFF;
@@ -156,10 +140,71 @@
 	}
 }
 @media (max-width: 375px) {
-	.allProduct-content .pageBar{
+	.container .pageBar{
 		padding-bottom: 64px;
 	}
+    .pageBar a{
+        font-size: 16px;
+        line-height: 1.5 !important;
+    }
 }
 
 //sunglasses
+.sunglass{
+    display: none;
+}
+//banner-p seting 37 & 43
+@media (max-width: 768px){
+	.banner-p{
+		max-width: 1138px;
+        max-height: 296px;
+	}
+    .sunglass .item1 img{
+        content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+    }
+    .sunglass .item2 img{
+        content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+    }
+}
+.sunProduct h2{
+    color: #000000;
+    font-weight: 500;
+}
+.sunProductList{
+    flex-wrap: wrap;
+}
+.sunProductList .list{
+    width: 32.098765%;
+}
+@media (max-width: 768px) {
+	.sunProductList .list{
+		width: 48.275862%;
+	}
+    .sunProductList .list{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 375px){
+	.sunglass .sunProduct{
+		padding-top: 40px;
+	}
+    .sunProduct h2{
+        font-size: 24px;
+    }
+	.sunProduct .mb-32{
+        font-size: 24px;
+		margin-bottom: 24px;
+	}
+	.sunProductList .list{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+}
 
+//func
+.func{
+    display: none;
+}
+.func h2{
+    text-align: center;
+}

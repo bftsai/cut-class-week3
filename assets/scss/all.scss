@@ -2,8 +2,8 @@
 @import './layout/footer.scss';
 
 
-@import './pages/product.scss';
 @import './pages/index.scss';
+@import './pages/product.scss';
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -89,7 +89,6 @@ body{
 .container{
 	max-width: 1296px;
 	margin: 0 auto;
-	padding: 0 12px;
 }
 @media (max-width: 768px) {
 	.container{

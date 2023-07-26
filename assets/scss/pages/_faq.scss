@@ -1,0 +1,36 @@
+.faq h1{
+    padding-left: 16px;
+    border-left: 8px solid rgba(159, 18, 19, 1);
+}
+.faq ul{
+    width: 66.049383%;
+}
+@media (max-width: 768px) {
+    .wrap.faq{
+        padding-top: 80px;
+    }
+    .faq ul{
+        width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .wrap.faq{
+        padding: 40px 0;
+    }
+    .wrap.faq .container{
+        padding: 0 8px 0 13px;
+    }
+    .faq ul{
+        width: 100%;
+    }
+    .faq h1{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .faq .q{
+        margin-bottom: 8px;
+    }
+    .faq .a{
+        margin-bottom: 24px;
+    }
+}

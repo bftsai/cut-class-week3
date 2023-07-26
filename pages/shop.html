@@ -19,7 +19,249 @@
     <%- include('./layout/header'); -%>
     
     <div class="wrap">
-        
+        <div class="shop pt-96 pb-80">
+            <div class="container">
+                <h1 class="fs-48 fw-bold mb-32">門市據點</h1>
+                <form action="" class="d-flex aic mb-40">
+                    <label for="location" class="label fs-24 mr-16">選擇地區</label>
+                    <select>
+                        <option class="item1" value="none">請選擇縣市</option>
+                        <option class="item2" value="taipei">台北市</option>
+                        <option class="item3" value="taichung">台中市</option>
+                        <option class="item4" value="kaohsiung">高雄市</option>
+                    </select>
+                </form>
+                <ul class="list d-flex">
+                    <li class="listItem mb-48 item1 taipei">
+                        <ul class="listItemObject">
+                            <li>
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="shop pic">
+                            </li>
+                            <h2 class="fs-24 px-24 my-8">台北中山旗艦店</h2>
+                            <li class="listItemObject-li d-flex aic px-24 mt-16">
+                                <span class="tel material-symbols-outlined">
+                                        call
+                                </span>
+                                <a class="fs-20" target="_blank" href="tel:020001234">
+                                    電話：(02)000-1234
+                                </a>
+                            </li>
+                            <li class="listItemObject-li d-flex aic px-24 my-8">
+                                <span class="time material-symbols-outlined">
+                                        schedule
+                                </span>
+                                <p class="fs-20">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="listItemObject-li d-flex jcfs px-24 mb-16">
+                                <span class="locate material-symbols-outlined">
+                                        location_on
+                                </span>
+                                <a class="fs-20" target="_blank" href="https://goo.gl/maps/mPzrXmBLHd7cQJwM9">
+                                    地址：台北市中山區南京東路25巷2-1號
+                                </a>
+                            </li>
+                            <li class="listItemObject-li taipeiDetail-1">
+                                <a class="detail fs-19 text-align-c py-16" target="_blank" href="">
+                                    詳細資訊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="listItem mb-48 item2 taipei ">
+                        <ul class="listItemObject">
+                            <li>
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true" alt="shop pic">
+                            </li>
+                            <h2 class="fs-24 px-24 my-8">台北綠園店</h2>
+                            <li class="listItemObject-li d-flex aic px-24 mt-16">
+                                <span class="tel material-symbols-outlined">
+                                        call
+                                </span>
+                                <a class="fs-20" target="_blank" href="tel:020002345">
+                                    電話：(02)000-2345
+                                </a>
+                            </li>
+                            <li class="listItemObject-li d-flex aic px-24 my-8">
+                                <span class="time material-symbols-outlined">
+                                        schedule
+                                </span>
+                                <p class="fs-20">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="listItemObject-li d-flex jcfs px-24 mb-16">
+                                <span class="locate material-symbols-outlined">
+                                        location_on
+                                </span>
+                                <a class="fs-20" target="_blank" href="https://goo.gl/maps/MCVyCSicezQBKqdM8">
+                                    地址：台北市中正區復興南路 132-1 號
+                                </a>
+                            </li>
+                            <li class="listItemObject-li taipeiDetail-2">
+                                <a class="detail fs-19 text-align-c py-16" target="_blank" href="">
+                                    詳細資訊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="listItem mb-48 item3 taichung">
+                        <ul class="listItemObject">
+                            <li>
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true" alt="shop pic">
+                            </li>
+                            <h2 class="fs-24 px-24 my-8">台中清水旗艦店</h2>
+                            <li class="listItemObject-li d-flex aic px-24 mt-16">
+                                <span class="tel material-symbols-outlined">
+                                        call
+                                </span>
+                                <a class="fs-20" target="_blank" href="tel:020001234">
+                                    電話：(02)000-1234
+                                </a>
+                            </li>
+                            <li class="listItemObject-li d-flex aic px-24 my-8">
+                                <span class="time material-symbols-outlined">
+                                        schedule
+                                </span>
+                                <p class="fs-20">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="listItemObject-li d-flex jcfs px-24 mb-16">
+                                <span class="locate material-symbols-outlined">
+                                        location_on
+                                </span>
+                                <a class="fs-20" target="_blank" href="https://goo.gl/maps/6KNTMrAoWSLQ5vdw7">
+                                    地址：台中市清水區經南一路 23 號 8 樓
+                                </a>
+                            </li>
+                            <li class="listItemObject-li taichungDetail-1">
+                                <a class="detail fs-19 text-align-c py-16" target="_blank" href="">
+                                    詳細資訊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="listItem item4 kaohsiung">
+                        <ul class="listItemObject">
+                            <li>
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true" alt="shop pic">
+                            </li>
+                            <h2 class="fs-24 px-24 my-8">高雄中正形象店</h2>
+                            <li class="listItemObject-li d-flex aic px-24 mt-16">
+                                <span class="tel material-symbols-outlined">
+                                        call
+                                </span>
+                                <a class="fs-20" target="_blank" href="tel:020002345">
+                                    電話：(02)000-2345
+                                </a>
+                            </li>
+                            <li class="listItemObject-li d-flex aic px-24 my-8">
+                                <span class="time material-symbols-outlined">
+                                        schedule
+                                </span>
+                                <p class="fs-20">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="listItemObject-li d-flex jcfs px-24 mb-16">
+                                <span class="locate material-symbols-outlined">
+                                        location_on
+                                </span>
+                                <a class="fs-20" target="_blank" href="https://goo.gl/maps/o4Zqev7SaKGKBcHm7">
+                                    地址：高雄市苓雅區中正路 38 號 12 樓
+                                </a>
+                            </li>
+                            <li class="listItemObject-li kaohsiungDetail-1">
+                                <a class="detail fs-19 text-align-c py-16" target="_blank" href="">
+                                    詳細資訊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="listItem item5 kaohsiung">
+                        <ul class="listItemObject">
+                            <li>
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true" alt="shop pic">
+                            </li>
+                            <h2 class="fs-24 px-24 my-8">高雄夢時代店</h2>
+                            <li class="listItemObject-li d-flex aic px-24 mt-16">
+                                <span class="tel material-symbols-outlined">
+                                        call
+                                </span>
+                                <a class="fs-20" target="_blank" href="tel:020001234">
+                                    電話：(02)000-1234
+                                </a>
+                            </li>
+                            <li class="listItemObject-li d-flex aic px-24 my-8">
+                                <span class="time material-symbols-outlined">
+                                        schedule
+                                </span>
+                                <p class="fs-20">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="listItemObject-li d-flex jcfs px-24 mb-16">
+                                <span class="locate material-symbols-outlined">
+                                        location_on
+                                </span>
+                                <a class="fs-20" target="_blank" href="https://goo.gl/maps/36L7xzhMJJzLjWav5">
+                                    地址：高雄市前鎮區中華一路 63 號 6 樓
+                                </a>
+                            </li>
+                            <li class="listItemObject-li kaohsiungDetail-2">
+                                <a class="detail fs-19 text-align-c py-16" target="_blank" href="">
+                                    詳細資訊
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="shopLocate pt-96 pb-80">
+            <div class="taipeiDetail-1 container">
+                <h2 class="fs-48 mb-32">門市據點</h2>
+                <form action="" class="d-flex aic mb-40">
+                    <label for="location" class="label fs-24 mr-16">選擇分店</label>
+                    <select>
+                        <option class="taipeiDetail-1" value="taipeiDetail-1">台北中山旗艦店</option>
+                        <option class="taipeiDetail-2" value="taipeiDetail-2">台北綠園店</option>
+                        <option class="taichungDetail-1" value="taichungDetail-1">台中清水旗艦店</option>
+                        <option class="kaohsiungDetail-1" value="kaohsiungDetail-1">高雄中正形象店</option>
+                        <option class="kaohsiungDetail-2" value="kaohsiungDetail-2">高雄夢時代店</option>
+                    </select>
+                </form>
+                <div class="content d-flex jcsb">
+                    <div class="item1">
+                        <div class="item1Object1">
+                            <!-- <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="shop pic"> -->
+                        </div>
+                        <div class="item1Object2">
+                            <h3 class="fs-24">台北中山旗艦店</h3>
+                            <ul>
+                                <li class="d-flex aic">
+                                    <span class="tel material-symbols-outlined">
+                                        call
+                                    </span>
+                                    <a href="#" class="tel fs-20" target="_blank">
+                                    電話：(02)000-1234
+                                    </a>
+                                </li>
+                                <li class="d-flex aic fs-20 py-8">
+                                    <span class="time material-symbols-outlined">
+                                        schedule
+                                    </span>
+                                    營業時間：10:00-21:00
+                                </li>
+                                <li class="d-flex aic">
+                                    <span class="locate material-symbols-outlined">
+                                        location_on
+                                    </span>
+                                    <a href="#" class="locate fs-20" target="_blank">
+                                    地址：台北市中山區南京東路25巷2-1號
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.462275227542!2d121.52552011056248!3d25.052316377711943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1690381406996!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     

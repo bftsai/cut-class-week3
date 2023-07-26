@@ -37,17 +37,19 @@
 .footer .line{
 	background: url(https://i.imgur.com/F2aUd0h.png) center center no-repeat;
 }
-.footer .tel{
+.footer .tel a{
 	display: inline;
 }
 .tel span{
 	font-size: 36px;
+	color: #FFFFFF;
 }
-.footer .mail{
+.footer .mail a{
 	display: inline;
 }
 .mail span{
 	font-size: 36px;
+	color: #FFFFFF;
 }
 .bottom{
 	border-top: 1px solid #fff;
@@ -83,8 +85,8 @@
 	}
 }
 @media (max-width: 375px) {
-	.wrap .footer{
-		padding-top: 27px;
+	.wrap.footer{
+		padding-top: 24px;
 	}
 	.footer .container{
 		padding: 0 14px 0 16px;
@@ -108,26 +110,28 @@
 	.footer .footerMenu{
 		display: none;
 	}
-	.footer .tel{
+	.footer a{
 		font-size: 16px;
+	}
+	.footer .tel{
 		margin-bottom: 8px;
 	}
-	.tel span{
-		font-size: 18px;
-		margin-right: 11px;
-	}
 	.footer .mail{
-		font-size: 16px;
 		margin-bottom: 24px;
 	}
-	.mail span{
+	.footer .tel span{
+		font-size: 18px;
+	}
+	.footer .mail span{
 		font-size: 20px;
-		margin-right: 10px;
 	}
 	.footer .bottom{
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 16px 0;
+		padding: 15px 0 16px 0;
+	}
+	.bottom p{
+		line-height: 1.5;
 	}
 	.bottom .bottomItem{
 		flex-direction: column;

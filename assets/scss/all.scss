@@ -5,6 +5,7 @@
 @import './pages/index.scss';
 @import './pages/product.scss';
 @import './pages/shop.scss';
+@import './pages/faq.scss';
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,6 +108,9 @@ body{
 .fdcol{
 	flex-direction: column;
 }
+.jcfs{
+	justify-content: flex-start;
+}
 .jcsb{
 	justify-content: space-between;
 }
@@ -152,11 +156,17 @@ body{
 .py-6{
 	padding: 6px 0;
 }
+.px-24{
+	padding: 0 24px;
+}
 .px-176{
 	padding: 0 176px;
 }
 .p-16{
 	padding: 16px;
+}
+.pt-96{
+	padding-top: 96px;
 }
 .pt-80{
 	padding-top: 80px;
@@ -178,6 +188,9 @@ body{
 }
 .pb-80{
 	padding-bottom: 80px;
+}
+.pb-16{
+	padding-bottom: 16px;
 }
 .pb-15{
 	padding-bottom: 15px;
@@ -215,8 +228,20 @@ body{
 .mb-4{
 	margin-bottom: 4px;
 }
+.mt-16{
+	margin-top: 16px;
+}
 .mx-32{
 	margin: 0 32px;
+}
+.mx-24{
+	margin: 0 24px;
+}
+.my-8{
+	margin: 8px 0;
+}
+.mr-24{
+	margin-right: 24px;
 }
 .mr-22{
 	margin-right: 22px;
@@ -224,20 +249,17 @@ body{
 .mr-20{
 	margin-right: 20px;
 }
-h1,h2,h3{
+.mr-16{
+	margin-right: 16px;
+}
+.fw-bold{
 	font-weight: bold;
 }
-h1{
+.fs-64{
 	font-size: 64px;
-	color: #650300;
 }
-h2{
+.fs-48{
 	font-size: 48px;
-	color: #650300;
-}
-h3{
-	font-size: 48px;
-	color: #FFFFFF;
 }
 .fs-42{
 	font-size: 42px;
@@ -247,6 +269,9 @@ h3{
 }
 .fs-32{
 	font-size: 32px;
+}
+.fs-26{
+	font-size: 26px;
 }
 .fs-24{
 	font-size: 24px;

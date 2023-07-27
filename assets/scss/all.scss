@@ -8,6 +8,7 @@
 @import './pages/product.scss';
 @import './pages/shop.scss';
 @import './pages/faq.scss';
+@import './pages/blog.scss';
 
 /*
 PS：CSS 樣式：先看權重再看先後（跨檔案的css 也是一樣）
@@ -137,6 +138,9 @@ body{
 .pl-12{
 	padding-left: 12px;
 }
+.mb-102{
+	margin-bottom: 102px;
+}
 .mb-80{
 	margin-bottom: 80px;
 }
@@ -145,6 +149,9 @@ body{
 }
 .mb-64{
 	margin-bottom: 64px;
+}
+.mb-60{
+	margin-bottom: 60px;
 }
 .mb-48{
 	margin-bottom: 48px;
@@ -166,6 +173,9 @@ body{
 }
 .mb-4{
 	margin-bottom: 4px;
+}
+.mt-64{
+	margin-top: 64px;
 }
 .mt-16{
 	margin-top: 16px;

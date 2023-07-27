@@ -1,79 +1,92 @@
 .blog{
-    .blogHeader{
-        background-color: #650300;
-        padding: 13px 0;
-        .blogMenu{
-            width: 37.3457%;
-        }
-            a{
-                color: #FFFFFF;
-            }
-            span{
-                font-size: 29px;
-                color: #FFFFFF;
-            }
-    }
-    .blogContent{
-        h1{
-            padding-left: 16px;
-            border-left: 8px solid #9F1213;
-        }
-        .d-flex{
-
-        
-            .content{
-                
-                .item{
-                    width: 49.0741%;
-                    .itemObject{
-                        li{
-
-                            h2{
-                                color: #650300;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    a:hover{
+        filter: drop-shadow(0 0 0 #FFFFFF);
     }
 }
-
-
+.blogHeader{
+    background-color: #650300;
+    padding: 13px 0;
+    .blogMenu{
+        width: 37.3457%;
+    }
+    span{
+        font-size: 29px;
+        color: #FFFFFF;
+    }
+}
+.blogMenu{
+    a{
+        color: #FFFFFF;
+    }
+}
+.blogContent{
+    h1{
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+    }
+}
+.content{
+    li{
+        width: 49.0741%;
+    }
+}
+.item{
+    a{
+        color: #650300;
+        margin-left: auto;
+    }
+}
+.itemObject{
+    h2{
+        color: #650300;
+    }
+    .time{
+        font-weight: 500;
+    }
+}
 
 
 //page bar
-.pageBar a{
-	color: #555555;
-}
-.pageBar .back{
-	border-left: 1px solid #555555;
-}
-.pageBar a{
-	padding: 11px 15.5px;
-}
-.back a,.next a{
-	line-height: 27px;
-}
-.next a{
-	background-color: #F2F2F2;
-}
-.pageBar a:hover{
-	filter: drop-shadow(0 0 0 #FFFFFF);
-	background-color: #000000;
-	color: #FFFFFF;
+.blogPageBar{
+    a{
+        color: #555555;
+        padding: 9.5px 15.5px;
+    }
+    .back{
+        border-left: 1px solid #555555;
+        a{
+            line-height: 29px;
+            padding: 8.5px 15.5px;
+        }
+    }
+    .next{
+        a{
+            line-height: 29px;
+            padding: 8.5px 15.5px;
+            background-color: #F2F2F2;
+        }
+    }
+    a:hover{
+        filter: drop-shadow(0 0 0 #FFFFFF);
+        background-color: #000000;
+        color: #FFFFFF;
+    }
 }
 @include ipad{
-    .pageBar{
+    .blogPageBar{
 		padding-top: 40px;
 	}
 }
 @include iphone6{
-    .container .pageBar{
-		padding-bottom: 64px;
-	}
-    .pageBar a{
-        font-size: 16px;
-        line-height: 1.5 !important;
+    .blogContent{
+        .blogPageBar{
+            padding-bottom: 64px;
+        }
+        a{
+            font-size: 16px;
+        }
+        .back a,.next a{
+            line-height: 26px;
+        }
     }
 }

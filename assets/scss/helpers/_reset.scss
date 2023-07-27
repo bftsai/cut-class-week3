@@ -46,3 +46,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+1.響應式網頁一定要加的img reset
+img{
+	max-width: 100%;
+	height: auto;
+}
+*/
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	/*
+	用以保持既有圖片的寬度
+	*/
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}

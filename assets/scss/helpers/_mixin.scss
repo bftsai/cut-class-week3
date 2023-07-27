@@ -6,13 +6,13 @@
 }
 
 //ipad
-@mixin ipad768{
+@mixin ipad{
     @media (max-width: 768px) {
         @content
     }
 }
 //iphone6
-@mixin md375{
+@mixin iphone5{
     @media (max-width: 375px) {
         @content
     }

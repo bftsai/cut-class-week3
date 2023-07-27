@@ -18,26 +18,8 @@ style 樣式選擇器：1000分 在html 標籤內寫style 樣式，如：<h1 sty
 PS：style 樣式通常拿來做動畫用，如jQuery
 !important：10000分 例：a{ color: red !important; }
 */
-/*
-1.響應式網頁一定要加的img reset
-img{
-	max-width: 100%;
-	height: auto;
-}
-2.
-*/
 
-img{
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	/*
-	用以保持既有圖片的寬度
-	*/
-}
-*,*::before,*::after{
-	box-sizing: border-box;
-}
+
 
 body{
 	font-family: 'Roboto','Noto Sans TC', sans-serif;
@@ -48,16 +30,17 @@ body{
 	padding: 0 12px;
 	margin: 0 auto;
 }
-@media (max-width: 768px) {
+@include ipad{
 	.container{
 		padding: 0 36px;
 	}
 }
-@media (max-width: 375px) {
+@include iphone5{
 	.container{
 		padding: 0 14px 0 13px;
 	}
 }
+
 .d-flex{
 	display: flex;
 }

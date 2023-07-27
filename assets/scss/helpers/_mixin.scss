@@ -1,0 +1,26 @@
+//desktop
+@mixin md1320{
+    @media (max-width: 1320px) {
+        @content
+    }
+}
+
+//ipad
+@mixin ipad768{
+    @media (max-width: 768px) {
+        @content
+    }
+}
+//iphone6
+@mixin md375{
+    @media (max-width: 375px) {
+        @content
+    }
+}
+
+//iphone12pro
+@mixin iphone12pro{
+    @media (max-width: 390px) {
+        @content
+    }
+}

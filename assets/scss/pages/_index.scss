@@ -17,13 +17,13 @@
 	padding: 6px 12px;
 	height: 41px;
 }
-@media (max-width: 768px) {
+@include ipad{
 	.banner{
 		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) center center no-repeat;
 		background-size: cover;
 	}
 }
-@media (max-width: 375px) {
+@include iphone6{
 	.index .banner{
 		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) center center  no-repeat;
 		background-size: cover;
@@ -54,7 +54,7 @@
 .introduceItem li{
 	width: 23.6115%;
 }
-@media (max-width: 768px) {
+@include ipad{
 	.introduce .introduceItem{
 		flex-wrap: wrap;
 	}
@@ -63,7 +63,7 @@
 		// width: 336px;
 	}
 }
-@media (max-width: 375px) {
+@include iphone6{
 	.index .introduce{
 		padding: 40px 0;
 	}
@@ -130,7 +130,7 @@
 	color: #650300;
 	filter: drop-shadow(0 0 16px #650300);
 }
-@media (max-width:768px) {
+@include ipad{
 	.product-1 h2{
 		margin-bottom: 24px;
 	}
@@ -157,7 +157,7 @@
 		margin-top: 24px;
 	}
 }
-@media (max-width: 375px) {
+@include iphone6{
 	.index .product-1,.index .product-2{
 		padding: 40px 0;
 	}
@@ -197,7 +197,7 @@
 .customerItem .fs-14{
 	color: #707070;
 }
-@media (max-width: 768px) {
+@include ipad{
 	.customerItem{
 		flex-wrap: wrap;
 	}
@@ -216,7 +216,7 @@
 		margin-bottom: 96px;
 	}
 }
-@media (max-width:375px) {
+@include iphone6{
 	.index .customer{
 		padding: 40px 0;
 	}
@@ -278,7 +278,7 @@
 	cursor: pointer;
 	color: #650300;
 }
-@media (max-width: 768px) {
+@include ipad{
 	.contact h2{
 		margin-bottom: 24px;
 	}
@@ -296,7 +296,7 @@
 		// width: 336px;
 	}
 }
-@media (max-width: 375px) {
+@include iphone6{
 	.index .contact{
 		padding: 40px 0;
 	}

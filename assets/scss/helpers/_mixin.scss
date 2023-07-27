@@ -12,7 +12,7 @@
     }
 }
 //iphone6
-@mixin iphone5{
+@mixin iphone6{
     @media (max-width: 375px) {
         @content
     }

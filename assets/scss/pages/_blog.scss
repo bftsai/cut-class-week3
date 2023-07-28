@@ -7,7 +7,7 @@
     background-color: #650300;
     padding: 13px 0;
     .blogMenu{
-        width: 37.3457%;
+        width: 484px;
     }
     span{
         font-size: 29px;
@@ -43,11 +43,121 @@
     .time{
         font-weight: 500;
     }
+    .ellipsisAfter{
+        display: none;
+    }
 }
-
-
+@include ipad{
+    .blog{
+        .blogContent{
+            padding-top: 80px;
+        }
+    }
+    .blogContent{
+        h1{
+            margin-bottom: 40px;
+        }
+    }
+    .content{
+        li{
+            width: 48.276%;
+            // height: 208px;
+        }
+        img{
+            display: none;
+        }
+        .blogPic1{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-1.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .blogPic2{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .blogPic3{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .blogPic4{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .blogPic5{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-5.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .ellipsis{
+            display: none;
+        }
+    }
+    .itemObject{
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .time{
+            margin-bottom: 4px;
+        }
+        .ellipsisAfter{
+            display: block;
+        }
+    }
+    .ellipsisAfter{
+        .ellipsisAfter-more{
+            display: inline;
+        }
+    }
+}
+@include iphone6{
+    .blog{
+        .blogHeader{
+            display: none;
+        }
+        .blogContent{
+            padding-top: 40px;
+        }
+    }
+    .blogContent{
+        h1{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .d-flex{
+        .content{
+            flex-direction: column;
+        }
+    }
+    .content{
+        .blogPic1,.blogPic2,.blogPic3,.blogPic4,.blogPic5{
+            margin-bottom: 8px;
+        }
+        li{
+            width: 100%;
+            img{
+                max-height: 208px;
+                display: block;
+            }
+        }
+    }
+    .itemObject{
+        .ellipsisAfter{
+            display: none;
+        }
+        .time{
+            margin-bottom: 0;
+        }
+    }
+}
 //page bar
 .blogPageBar{
+    li{
+        border-color: #555555;
+        border-style: solid;
+        border-width: 1px 1px 1px 0;
+    }
     a{
         color: #555555;
         padding: 9.5px 15.5px;
@@ -73,20 +183,84 @@
     }
 }
 @include ipad{
-    .blogPageBar{
-		padding-top: 40px;
-	}
+    .d-flex{
+        .content{
+            margin-bottom: 24px;
+        }
+    }
+    .blog{
+        .blogPageBar{
+            margin-top: 56px;
+            padding-top: 0;
+        }
+    }
 }
 @include iphone6{
     .blogContent{
         .blogPageBar{
+            max-width: 348px;
             padding-bottom: 64px;
-        }
-        a{
-            font-size: 16px;
+            margin-top: 40px;
+            a{
+                font-size: 16px;
+                text-align: center;
+                padding: 9.5px 0;
+                // padding: 9.5px 15.5px;
+            }
+            li{
+                width: 11.21%;
+            }
+            .back,.next{
+                width: 21.982%;
+            }
         }
         .back a,.next a{
             line-height: 26px;
+            padding: 8.5px 0;
+            // padding: 8.5px 11px;
+        }
+    }
+}
+
+// more1Content
+// .more1Content{
+//     display: none;
+// }
+.main{
+    width: 66.049383%;
+    h3{
+        font-weight: 500;
+    }
+    .sort{
+        .special{
+            color: #AA0601;
+        }
+    }
+    .hashtag{
+        a{
+            color: #AA0601;
+        }
+    }
+    .paragraphGroup{
+        p{
+            color: #555555;
+        }
+    }
+}
+.tag{
+    width: 280px;
+    a{
+        color: #AA0601;
+    }
+}
+.moreFooter{
+    .share{
+        color: #0A0A0A;
+        border-bottom: 1px solid #707070;
+    }
+    .changeArticle{
+        a{
+            color: #000000;
         }
     }
 }
